@@ -29,13 +29,13 @@
         <a href="/dashboard.html" class="list-group-item list-group-item-action ">
           Dashboard
         </a>
-        <a href="/dashboard-products.html" class="list-group-item  list-group-item-action">
+        <a href="/dashboard-products.html" class="list-group-item  list-group-item-action active">
           My Products
         </a>
         <a href="/dashboard-transactions.html" class="list-group-item  list-group-item-action">
           Transactions
         </a>
-        <a href="/dashboard-settings.html" class="list-group-item  list-group-item-action active">
+        <a href="/dashboard-settings.html" class="list-group-item  list-group-item-action ">
           Store Settings
         </a>
         <a href="/dashboard-account.html" class="list-group-item  list-group-item-action">
@@ -112,9 +112,9 @@
         
        <div class="section-content section-dashboard-home mx-4" data-aos="fade-up">
             <div class="dashboard-heading">
-              <h2 class="dashboard-title">Store Settings</h2>
+              <h2 class="dashboard-title">create Product</h2>
               <p class="dashboard-subtitle">
-                Make store that profitable
+                Create Own Products
               </p>
             </div>
            <div class="dashboard-content">
@@ -126,11 +126,17 @@
                       <div class="row">
                         <div class="col-md-6">
                           <div class="form-group" >
-                            <label for="">Nama Toko</label>
+                            <label for="">Product Name</label>
                             <input type="text" class="form-control " >
                           </div>
                         </div>
                         <div class="col-md-6">
+                          <div class="form-group" >
+                            <label for="">Price</label>
+                            <input type="number" class="form-control " >
+                          </div>
+                        </div>
+                        <div class="col-md-12">
                           <div class="form-group" >
                             <label for="">Kategori</label>
                             <select name="category" id="" class="form-control">
@@ -138,38 +144,25 @@
                             </select>
                           </div>
                         </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for=""> Store</label>
-                            <p class="text-muted">
-                              Apakah anda juga ingin membuka toko?
-                            </p>
-                            <div class="custom-control custom-radio custom-control-inline">
-                
-                              <input 
-                              type="radio" 
-                              class="custom-control-input" 
-                              name="is_store_open" 
-                              id="openStoreTrue"
-                              value="true">
-                              <label for="openStoreTrue" class="custom-control-label">Buka</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                
-                              <input 
-                              type="radio" 
-                              class="custom-control-input" 
-                              name="is_store_open" 
-                              id="openStoreFalse"
-                              value="false">
-                              <label for="openStoreFalse" class="custom-control-label">Sementara Tutup</label>
-                            </div>
+                        <div class="col-md-12">
+                          <div class="form-group" >
+                            <label for="">Description</label>
+                            <textarea name="editor" ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group" >
+                            <label for="">Thumbnails</label>
+                            <input type="file" class="form-control " >
+                          <p class="text-muted">
+                            Kamu dapat memilih lebih dari satu file
+                          </p>
                           </div>
                         </div>
                       </div>
                        <div class="row">
-                <div class="col text-right">
-                  <button type="submit " class="btn btn-success px-5">
+                <div class="col-12 col-md-12 text-right">
+                  <button type="submit " class="btn btn-success px-5 d-block ">
                     Save Now!
 
                   </button>
@@ -232,7 +225,9 @@
         $('#wrapper').toggleClass('toggled');
       })
     </script>
-
-
+<script src="https://cdn.ckeditor.com/4.20.2/standard/ckeditor.js"></script>
+ <script>
+      CKEDITOR.replace( 'editor' );
+      </script>
   </body>
 </html>

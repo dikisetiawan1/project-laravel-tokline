@@ -99,6 +99,28 @@
             line-height: 24px;
             color: #9191a9;
         }
+
+        .dashboard-subtitle{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            color: #9191a9;
+        }
+
+        .product-title{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #c5c5c5;
+        }
+
+        .product-subtitle{
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+            color: #0c0d36;
+            margin-bottom: 28px;
+        }
     }
 
 
@@ -117,6 +139,15 @@
                 border-bottom: 3px solid #0C0D36;
                 background: none;
             }
+        }
+    }
+
+    .gallery-container{
+        .delete-gallery{
+            display: block;
+            position: absolute;
+            top: -10px;
+            right: 0;
         }
     }
 
